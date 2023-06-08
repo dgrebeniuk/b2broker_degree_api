@@ -1,0 +1,59 @@
+BRequest URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags/15
+Body:			<none>
+ARequest URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags/1
+Body:			<none>
+{
+    "id": 1,
+    "name": "tag"
+}
+?Request URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags
+Body:			<none>
+{
+    "total": 5,
+    "data": [
+
+        {
+            "id": 1,
+            "name": "tag"
+        },
+
+        {
+            "id": 3,
+            "name": "four"
+        },
+
+        {
+            "id": 4,
+            "name": "my_tag"
+        },
+
+        {
+            "id": 6,
+            "name": "one"
+        },
+
+        {
+            "id": 16,
+.            "name": "Customer Data Architect"
+
+        }
+    ]
+}
+ARequest URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags/3
+Body:
+{
+    "name": "bennett.willms"
+}
+{
+    "id": 3,
+    "name": "bennett.willms"
+}
+?Request URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags
+Body:
+{
+    "name": "wiley.lynch"
+}
+{
+    "id": 17,
+    "name": "wiley.lynch"
+}

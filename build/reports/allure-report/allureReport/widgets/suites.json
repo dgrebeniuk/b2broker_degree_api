@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"100523384463dbe60e3a5a975cca634b","name":"tests.SelenoidTests","statistic":{"failed":1,"broken":0,"skipped":0,"passed":6,"unknown":0,"total":7}},{"uid":"bfa859e628cb837e3f7be846a562005c","name":"tests.RegresTest","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}}]}
