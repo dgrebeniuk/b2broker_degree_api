@@ -43,3 +43,8 @@ test {
     useJUnitPlatform()
 }
 
+task api_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("apiTest")
+    }
+}

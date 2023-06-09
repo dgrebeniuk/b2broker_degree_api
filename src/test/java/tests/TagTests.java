@@ -2,6 +2,7 @@ package tests;
 
 import models.TagBodyModel;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
@@ -9,6 +10,7 @@ import static org.hamcrest.Matchers.notNullValue;
 import static specs.TagSpec.tagRequestSpec;
 import static specs.TagSpec.tagResponseSpec;
 
+@Tag("apiTest")
 public class TagTests extends TestBase{
 
    String tagName = faker.name().username();

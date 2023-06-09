@@ -1,0 +1,17 @@
+{
+  "base": {
+    "logo": "",
+    "project": "b2broker",
+    "environment": "qa.b2broker",
+    "comment": "test is ready, @dgrebeniuk",
+    "reportLink": "",
+    "language": "ru",
+    "allureFolder": "allure-report/",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "6148399699:AAGXCWZEzM4_YyIL3zZFO439kLbNXY-VGJE",
+    "chat": "-1001826393349",
+    "replyTo": ""
+  }
+}
