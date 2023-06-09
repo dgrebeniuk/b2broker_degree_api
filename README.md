@@ -31,7 +31,7 @@
 - Проверка успешного удаления тэга.
 
 
-## <img width="4%" title="Jenkins" src="img/logo/Jenkins.svg"> Запуск тестов из [Jenkins]("https://jenkins.autotests.cloud/job/b2broker_degree_api/")
+## <img width="4%" title="Jenkins" src="media/logo/Jenkins.svg"> Запуск тестов из [Jenkins](https://jenkins.autotests.cloud/job/b2broker_degree_api/)
 
 Для запуска тестов из Jenkins:
 1. Для запуска необходимо нажать "Собрать сейчас".
