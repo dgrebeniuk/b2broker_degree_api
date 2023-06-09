@@ -1,8 +1,6 @@
 package tests;
 
-import models.LoginBodyModel;
 import models.TagBodyModel;
-import models.TokenForAuth;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
@@ -13,33 +11,12 @@ import static specs.TagSpec.tagResponseSpec;
 
 public class TagTests extends TestBase{
 
-   @DisplayName("Get a token")
-   @Test
-   void getToken() {
-
-      LoginBodyModel loginBody = new LoginBodyModel();
-      loginBody.setEmail("dgrebenyuk@b2broker.com");
-      loginBody.setPassword("admin");
-
-      TokenForAuth response = given(tagRequestSpec)
-              .body(loginBody)
-              .when()
-              .post("/signin")
-              .then()
-              .spec(tagResponseSpec)
-              .statusCode(200)
-              .extract().as(TokenForAuth.class);
-
-      String accessToken = response.getAuthData().getToken();
-      System.out.println(accessToken);
-
-
-   }
    String tagName = faker.name().username();
 
    @DisplayName("Get all tags")
    @Test
    void getAllTags() {
+
       given(tagRequestSpec)
               .when()
                   .get("/tags")
