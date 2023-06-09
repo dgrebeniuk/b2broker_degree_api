@@ -1,59 +1,20 @@
-BRequest URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags/15
-Body:			<none>
-ARequest URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags/1
-Body:			<none>
-{
-    "id": 1,
-    "name": "tag"
-}
-?Request URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags
-Body:			<none>
-{
-    "total": 5,
-    "data": [
-
-        {
-            "id": 1,
-            "name": "tag"
-        },
-
-        {
-            "id": 3,
-            "name": "four"
-        },
-
-        {
-            "id": 4,
-            "name": "my_tag"
-        },
-
-        {
-            "id": 6,
-            "name": "one"
-        },
-
-        {
-            "id": 16,
-.            "name": "Customer Data Architect"
-
-        }
-    ]
-}
-ARequest URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags/3
-Body:
-{
-    "name": "bennett.willms"
-}
-{
-    "id": 3,
-    "name": "bennett.willms"
-}
-?Request URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags
-Body:
-{
-    "name": "wiley.lynch"
-}
-{
-    "id": 17,
-    "name": "wiley.lynch"
-}
+ARequest URI:	https://stand-qa-05-api.b2broker.tech/api/v2/signin
+Body:
+{
+(    "email": "dgrebenyuk@b2broker.com",
+    "password": "admin"
+}
+{
+    "2faRequired": false,
+    "accessToken": {
+Å        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODYyOTQ5MTMsIm5iZiI6MTY4NjI5NDkxMywiZXhwIjoxNjg2MzA0NTEzLCJpc3MiOiJodHRwczovL3N0YW5kLXFhLTA1LWFwaS5iMmJyb2tlci50ZWNoIiwic3ViIjoiOCIsImlhdF9tdCI6IjE2ODYyOTQ5MTMuMDMzNyJ9.S_AsSL8s2-3KxgREk2xvO9TEckO9QPTFfUaQWVV7HkB2LxOD8F8dkDVLTUXklO6nakCdOrhIueWsJWJFvfY4fIxHmXCvLBTnZGvPgBzsRQiCSDwo3tmCyXYWqLlryEqKc5kX2kOGbMbhs_tNp9uTrXNjVbNgENBH5NvjZl9a1ON5xP5iVRtkH23_QGW9YtzW-ergZ4KwZapIEm6H4Efq9o9MUYLqGDQzn04-chpzAGArMUk5qMrqfFfECRt94CPEiPJMObZGhXDumMq9C4p-QeMZ9B8JDrYO_zre0qJkS1JS4ZMvCkhKmc0DVX93Tr0i8TbSxahyAdaQyHyzBWoBDQ",
+2        "createdAt": "2023-06-09T07:15:13+00:00",
+1        "expiresAt": "2023-06-09T09:55:13+00:00"
+    },
+    "refreshToken": {
+Å        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODYyOTQ5MTMsIm5iZiI6MTY4NjI5NDkxMywiZXhwIjoxNjg2MzA0NTEzLCJpc3MiOiJodHRwczovL3N0YW5kLXFhLTA1LWFwaS5iMmJyb2tlci50ZWNoIiwic3ViIjoiOCIsImlhdF9tdCI6IjE2ODYyOTQ5MTMuMDM3MyJ9.PY8KLClfrhKMXOHfF-UlNUiQ9_56BLp8CP3Um0FLflkCHgxQv1bQJRDWl5Js_3-JmlN237DkUCXzJ1wS6LVkqjnX5kGinYSMSWLOTjNhSrNgIn0Rk5qnPv-OW-xOu3M5KaZR1NhTcjPKcpzr7ylESVLt-bLYCl6mCE54PdyNyGyxdJg4IZUjsQue2pNrwGxsSmM_fxGCFLdjT3o7DWSeiBOUNYBPF_1DfzHcl6vPcGliM7InCzuOVuc8QdMTX5cYbl7UCBqKWxOwsY3VtmAiO7trOVnCPQRzCYfMOFbuYrkh_zW3bSgGLvUyywpb2Pw1d_ju-PnPTWGWatmMJpXwAA",
+2        "createdAt": "2023-06-09T07:15:13+00:00",
+1        "expiresAt": "2023-06-09T09:55:13+00:00"
+    }
+}
+±eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODYyOTQ5MTMsIm5iZiI6MTY4NjI5NDkxMywiZXhwIjoxNjg2MzA0NTEzLCJpc3MiOiJodHRwczovL3N0YW5kLXFhLTA1LWFwaS5iMmJyb2tlci50ZWNoIiwic3ViIjoiOCIsImlhdF9tdCI6IjE2ODYyOTQ5MTMuMDMzNyJ9.S_AsSL8s2-3KxgREk2xvO9TEckO9QPTFfUaQWVV7HkB2LxOD8F8dkDVLTUXklO6nakCdOrhIueWsJWJFvfY4fIxHmXCvLBTnZGvPgBzsRQiCSDwo3tmCyXYWqLlryEqKc5kX2kOGbMbhs_tNp9uTrXNjVbNgENBH5NvjZl9a1ON5xP5iVRtkH23_QGW9YtzW-ergZ4KwZapIEm6H4Efq9o9MUYLqGDQzn04-chpzAGArMUk5qMrqfFfECRt94CPEiPJMObZGhXDumMq9C4p-QeMZ9B8JDrYO_zre0qJkS1JS4ZMvCkhKmc0DVX93Tr0i8TbSxahyAdaQyHyzBWoBDQ

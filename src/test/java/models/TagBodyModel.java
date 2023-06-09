@@ -3,6 +3,6 @@ package models;
 import lombok.Data;
 
 @Data
-public class TagModel {
+public class TagBodyModel {
    String name;
 }

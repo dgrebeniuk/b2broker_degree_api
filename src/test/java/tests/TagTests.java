@@ -1,6 +1,8 @@
 package tests;
 
-import models.TagModel;
+import models.LoginBodyModel;
+import models.TagBodyModel;
+import models.TokenForAuth;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
@@ -11,27 +13,28 @@ import static specs.TagSpec.tagResponseSpec;
 
 public class TagTests extends TestBase{
 
-//   @DisplayName("Get a token")
-//   @Test
-//   void getToken() {
-//
-//      LoginBodyModel loginBody = new LoginBodyModel();
-//      loginBody.setEmail("dgrebenyuk@b2broker.com");
-//      loginBody.setPassword("admin");
-//
-//      given()
-//              .filter(withCustomTemplates())
-//              .log().uri()
-//              .body(loginBody)
-//              .contentType(JSON)
-//              .when()
-//              .post("https://stand-qa-05-api.b2broker.tech/api/v2/signin")
-//              .then()
-//              .log().status()
-//              .log().body()
-//              .statusCode(200);
+   @DisplayName("Get a token")
+   @Test
+   void getToken() {
 
-//   }
+      LoginBodyModel loginBody = new LoginBodyModel();
+      loginBody.setEmail("dgrebenyuk@b2broker.com");
+      loginBody.setPassword("admin");
+
+      TokenForAuth response = given(tagRequestSpec)
+              .body(loginBody)
+              .when()
+              .post("/signin")
+              .then()
+              .spec(tagResponseSpec)
+              .statusCode(200)
+              .extract().as(TokenForAuth.class);
+
+      String accessToken = response.getAuthData().getToken();
+      System.out.println(accessToken);
+
+
+   }
    String tagName = faker.name().username();
 
    @DisplayName("Get all tags")
@@ -49,7 +52,7 @@ public class TagTests extends TestBase{
    @DisplayName("Create a new tag")
    @Test
    void createNewTag() {
-      TagModel tagBody = new TagModel();
+      TagBodyModel tagBody = new TagBodyModel();
       tagBody.setName(tagName);
 
       given(tagRequestSpec)
@@ -78,7 +81,7 @@ public class TagTests extends TestBase{
    @DisplayName("Update a tag")
    @Test
    void updateTagById() {
-      TagModel tagBody = new TagModel();
+      TagBodyModel tagBody = new TagBodyModel();
       tagBody.setName(tagName);
 
       given(tagRequestSpec)

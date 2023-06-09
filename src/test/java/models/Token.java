@@ -5,7 +5,6 @@ import lombok.Data;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class LoginBodyModel {
-
-   String email, password;
+public class Token {
+   private String token;
 }
