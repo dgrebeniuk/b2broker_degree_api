@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>POST: https://stand-qa-05-api.b2broker.tech/api/v2/tags</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "name": "kitty.doyle"
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODYzMjg5NDMsIm5iZiI6MTY4NjMyODk0MywiZXhwIjoxNjk1OTI4OTQzLCJpc3MiOiJodHRwczovL3N0YW5kLXFhLTA1LWFwaS5iMmJyb2tlci50ZWNoIiwic3ViIjoiOCIsImlhdF9tdCI6IjE2ODYzMjg5NDMuMjEifQ.Bke27mwjSGV01ZDTQZf_2boOAv-RQV3wM9mBygKzFRYi0tzzox9eIal5aPGl-_aIK7yCCw-bs-pyDJxB-45-74MkS-17kh1oP0Cm_-dWPEZus5ByU7MHGAGDYOWXoPRG_YVlsap67jD8kFuUlq7yNeMzBUO0Yuze9srcfcbd2r0RoXQ5cugicQJAA2k2VM8YmhVYJ6E7kZePecnKjev0isEXZIMJs4jbvnA06k9-uPXRR0Q889rE_2pqkLhN1z5MGUvgaqjQBN7RZzNllFU5xfHTq2dtYSI3YRfrMAUuyVwqYsM0pUV5P-6IohUkNyaxQQxgTi91DQlb-4IN99E2bg</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X POST 'https://stand-qa-05-api.b2broker.tech/api/v2/tags' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODYzMjg5NDMsIm5iZiI6MTY4NjMyODk0MywiZXhwIjoxNjk1OTI4OTQzLCJpc3MiOiJodHRwczovL3N0YW5kLXFhLTA1LWFwaS5iMmJyb2tlci50ZWNoIiwic3ViIjoiOCIsImlhdF9tdCI6IjE2ODYzMjg5NDMuMjEifQ.Bke27mwjSGV01ZDTQZf_2boOAv-RQV3wM9mBygKzFRYi0tzzox9eIal5aPGl-_aIK7yCCw-bs-pyDJxB-45-74MkS-17kh1oP0Cm_-dWPEZus5ByU7MHGAGDYOWXoPRG_YVlsap67jD8kFuUlq7yNeMzBUO0Yuze9srcfcbd2r0RoXQ5cugicQJAA2k2VM8YmhVYJ6E7kZePecnKjev0isEXZIMJs4jbvnA06k9-uPXRR0Q889rE_2pqkLhN1z5MGUvgaqjQBN7RZzNllFU5xfHTq2dtYSI3YRfrMAUuyVwqYsM0pUV5P-6IohUkNyaxQQxgTi91DQlb-4IN99E2bg' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "name": "kitty.doyle"
+}'</code></pre>
+    </div>
+</body>
+</html>

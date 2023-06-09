@@ -1,1 +1,1 @@
-{"name":"Gradle","type":"gradle","taskName":"test","buildName":"b2broker_degree_api","projectPath":":","projectVersion":"1.0-SNAPSHOT"}
+{"name":"Gradle","type":"gradle","taskName":"api_test","buildName":"b2broker_degree_api","projectPath":":","projectVersion":"1.0-SNAPSHOT"}

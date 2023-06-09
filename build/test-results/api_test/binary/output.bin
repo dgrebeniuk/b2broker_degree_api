@@ -1,0 +1,79 @@
+BRequest URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags/15
+Body:			<none>
+ARequest URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags/1
+Body:			<none>
+{
+    "id": 1,
+    "name": "tag"
+}
+?Request URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags
+Body:			<none>
+{
+    "total": 9,
+    "data": [
+
+        {
+            "id": 1,
+            "name": "tag"
+        },
+
+        {
+            "id": 3,
+$            "name": "evon.champlin"
+        },
+
+        {
+            "id": 4,
+            "name": "my_tag"
+        },
+
+        {
+            "id": 6,
+            "name": "one"
+        },
+
+        {
+            "id": 16,
+.            "name": "Customer Data Architect"
+        },
+
+        {
+            "id": 17,
+"            "name": "wiley.lynch"
+        },
+
+        {
+            "id": 18,
+             "name": "bo.daniel"
+        },
+
+        {
+            "id": 19,
+!            "name": "cari.lynch"
+        },
+
+        {
+            "id": 20,
+#            "name": "jeanna.ebert"
+
+        }
+    ]
+}
+ARequest URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags/3
+Body:
+{
+    "name": "rena.rosenbaum"
+}
+{
+    "id": 3,
+    "name": "rena.rosenbaum"
+}
+?Request URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags
+Body:
+{
+    "name": "kitty.doyle"
+}
+{
+    "id": 21,
+    "name": "kitty.doyle"
+}

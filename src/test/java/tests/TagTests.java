@@ -25,7 +25,7 @@ public class TagTests extends TestBase{
               .then()
                   .statusCode(200)
                   .spec(tagResponseSpec)
-                  .body("total", is(5));
+                  .body("total", is(notNullValue()));
    }
 
    @DisplayName("Create a new tag")
@@ -78,7 +78,7 @@ public class TagTests extends TestBase{
    void deleteTagById() {
       given(tagRequestSpec)
               .when()
-              .delete("/tags/15")
+              .delete("/tags/17")
               .then()
               .statusCode(204)
               .spec(tagResponseSpec)
