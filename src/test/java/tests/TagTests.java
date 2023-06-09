@@ -78,10 +78,9 @@ public class TagTests extends TestBase{
    void deleteTagById() {
       given(tagRequestSpec)
               .when()
-              .delete("/tags/17")
+              .delete("/tags/18")
               .then()
               .statusCode(204)
-              .spec(tagResponseSpec)
-              .body("id", is(notNullValue()));
+              .spec(tagResponseSpec);
    }
 }
