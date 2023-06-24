@@ -45,7 +45,7 @@
 
 ```bash
 clean
-api_test
+test
 ```
 
 
