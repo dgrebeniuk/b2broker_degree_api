@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">5</div>
+<div class="counter">1</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.093s</div>
+<div class="counter">1.125s</div>
 <p>duration</p>
 </div>
 </td>
@@ -51,7 +51,7 @@
 </td>
 <td>
 <div class="infoBox failures" id="successRate">
-<div class="percent">80%</div>
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
@@ -77,7 +77,7 @@
 <h3 class="failures">Delete a tag</h3>
 <span class="code">
 <pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;204&gt; but was &lt;404&gt;.
+Expected status code &lt;2040&gt; but was &lt;204&gt;.
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -106,7 +106,7 @@ Expected status code &lt;204&gt; but was &lt;404&gt;.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at tests.TagTests.deleteTagById(TagTests.java:86)
+	at tests.TagTests.deleteTagById(TagTests.java:103)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -213,34 +213,10 @@ Expected status code &lt;204&gt; but was &lt;404&gt;.
 </tr>
 </thead>
 <tr>
-<td class="success">Create a new tag</td>
-<td class="success">createNewTag()</td>
-<td class="success">0.353s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
 <td class="failures">Delete a tag</td>
 <td class="failures">deleteTagById()</td>
-<td class="failures">0.433s</td>
+<td class="failures">1.125s</td>
 <td class="failures">failed</td>
-</tr>
-<tr>
-<td class="success">Get all tags</td>
-<td class="success">getAllTags()</td>
-<td class="success">0.345s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Get tag by id</td>
-<td class="success">getTagById()</td>
-<td class="success">0.625s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Update a tag</td>
-<td class="success">updateTagById()</td>
-<td class="success">0.337s</td>
-<td class="success">passed</td>
 </tr>
 </table>
 </div>
@@ -256,89 +232,28 @@ Body:
 {
     &quot;2faRequired&quot;: false,
     &quot;accessToken&quot;: {
-        &quot;token&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODc2NDQxODcsIm5iZiI6MTY4NzY0NDE4NywiZXhwIjoxNjk3MjQ0MTg3LCJpc3MiOiJodHRwczovL3N0YW5kLXFhLTA1LWFwaS5iMmJyb2tlci50ZWNoIiwic3ViIjoiOCIsImlhdF9tdCI6IjE2ODc2NDQxODcuNzk5NyJ9.yXnDyD1pGeud8YgiVtTQwwUrZVzOWKXYCNF_8AZWVKbIi6tqFhmMbF0X-PlurAd2JsIxjfv473QJWyh9J5yvcPL7MBZCyEECo-VxPOOWK_rc2StVlmnI3NsMU_EhpHe1g_IrD54rl1zhElRCnJ6rIZ6iTHJY8261DaAUgWtuptObgOWw3azkShsoRqV1piURraejlV8BEgmbdmW0lOwkBbQTE_KL4YpSOgaYyafsC4PEjGIHfc0PAtLr_rNPLWSkrQajGTwIUKKXJ8NaqFnFj6EKWa9P_VS1MA20kUzcTjTz672IXZE8viVIPru6KjNZVHzd_rpjwczFQagvUb3ilw&quot;,
-        &quot;createdAt&quot;: &quot;2023-06-24T22:03:07+00:00&quot;,
-        &quot;expiresAt&quot;: &quot;2023-10-14T00:43:07+00:00&quot;
+        &quot;token&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODc2NDY4ODUsIm5iZiI6MTY4NzY0Njg4NSwiZXhwIjoxNjk3MjQ2ODg1LCJpc3MiOiJodHRwczovL3N0YW5kLXFhLTA1LWFwaS5iMmJyb2tlci50ZWNoIiwic3ViIjoiOCIsImlhdF9tdCI6IjE2ODc2NDY4ODUuOTIwNiJ9.V5Jjw2KvFYOibfP3iV_W0if1z41qikKIcEHIw-RPdXumOQzxFovrUBmxFNg1trg3Be_utVCJ5wgxPE-8vnrSed-YJNqh9DyoRxBc7zfiPqRRdYVXEkKwwC5wfjWieaS1D-ovbRHN6wW0evrRDaYQr99PcvFpBk_x3Vw3nMBh4F4O_1G1OE1kf0R0T5NNons0qo0gInp8XpZMF1YBzqzftqhAEhHzT_B4YFVJXIUjUVT9qxw0icOPcmDgpRofhO9jXia2xWs_DiL5MEviNWNOKVMFFyKrvs_1AMXKXpJk9YBumm7af00k0HxO9b432Od53O_js-4NbPwa93G66j0CXw&quot;,
+        &quot;createdAt&quot;: &quot;2023-06-24T22:48:05+00:00&quot;,
+        &quot;expiresAt&quot;: &quot;2023-10-14T01:28:05+00:00&quot;
     },
     &quot;refreshToken&quot;: {
-        &quot;token&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODc2NDQxODcsIm5iZiI6MTY4NzY0NDE4NywiZXhwIjoxNjk3MjQ0MTg3LCJpc3MiOiJodHRwczovL3N0YW5kLXFhLTA1LWFwaS5iMmJyb2tlci50ZWNoIiwic3ViIjoiOCIsImlhdF9tdCI6IjE2ODc2NDQxODcuODA0NCJ9.Rlz3LB-xNUDYiJDBo6Pvaka2W6RsVVQ285oe9T5OKDTBTCjWHUQe7XnM3s9xn1W43bclkViEkI6VGnmB9q3NTlggNZCCD2iXt7PkkR9zx8hEwvdc1DvNP_lEMsrRU2S6V4hM3N_lJ_YFD2NogMDFxQhu708gbc_XdpNcpdrxc-6NoFkP7mMUfXM-CRyHp6LkwyFKfO6IUGi7t8_lccUzm7MsV4ax1xaBzYHT2EUx9PC88ISNTOePzaQwf2ByYkYhZMgZN3j4HC8_f52wTGqjfDhngr-0GBzaub3XI5m2xdgAOzRw0385LLEJ6o8S0KG_Xpor52MTmTQEKsI5hzr2tQ&quot;,
-        &quot;createdAt&quot;: &quot;2023-06-24T22:03:07+00:00&quot;,
-        &quot;expiresAt&quot;: &quot;2023-10-14T00:43:07+00:00&quot;
+        &quot;token&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODc2NDY4ODUsIm5iZiI6MTY4NzY0Njg4NSwiZXhwIjoxNjk3MjQ2ODg1LCJpc3MiOiJodHRwczovL3N0YW5kLXFhLTA1LWFwaS5iMmJyb2tlci50ZWNoIiwic3ViIjoiOCIsImlhdF9tdCI6IjE2ODc2NDY4ODUuOTI0In0.ZAZE-WC9zXo2Ml8zlIIPfI_qNdE9OT2A4vZLe-mQf5k3-eYl50D6LH7yOqu3qyMNeki8IZovlKQWAHnU_s_5GwqOukzJFZd_17lOH_0YUat19wfhyO_cJqHA6FQ-44TPiFxthDpRoXBwWXGaN9exoFoHBnqrOJuifqZLZ6RWKuBdK78uO2g-khkDGZDgaiTf4vWiT1ll_YU5T7-HQa4wqpZ1f1QRWnXczrYZpiE4m3DdZTQ3t5ElPFymyNF3YzWcjyHKhSlqUofJEFoIvAZpi3C0pTVazIc7ap6qebi7MSn_WSSR9yddR2mZc0ehnm_oK545H-yG9e1pkHh5KKCDxg&quot;,
+        &quot;createdAt&quot;: &quot;2023-06-24T22:48:05+00:00&quot;,
+        &quot;expiresAt&quot;: &quot;2023-10-14T01:28:05+00:00&quot;
     }
 }
-Request URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags/18
-Body:			&lt;none&gt;
-Request URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags/1
-Body:			&lt;none&gt;
-{
-    &quot;id&quot;: 1,
-    &quot;name&quot;: &quot;tag&quot;
-}
-Request URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags
-Body:			&lt;none&gt;
-{
-    &quot;total&quot;: 13,
-    &quot;data&quot;: [
-        {
-            &quot;id&quot;: 1,
-            &quot;name&quot;: &quot;tag&quot;
-        },
-        {
-            &quot;id&quot;: 3,
-            &quot;name&quot;: &quot;honey.dietrich&quot;
-        },
-        {
-            &quot;id&quot;: 4,
-            &quot;name&quot;: &quot;my_tag&quot;
-        },
-        {
-            &quot;id&quot;: 6,
-            &quot;name&quot;: &quot;one&quot;
-        },
-        {
-            &quot;id&quot;: 16,
-            &quot;name&quot;: &quot;Customer Data Architect&quot;
-        },
-        {
-            &quot;id&quot;: 19,
-            &quot;name&quot;: &quot;cari.lynch&quot;
-        },
-        {
-            &quot;id&quot;: 20,
-            &quot;name&quot;: &quot;jeanna.ebert&quot;
-        },
-        {
-            &quot;id&quot;: 21,
-            &quot;name&quot;: &quot;kitty.doyle&quot;
-        },
-        {
-            &quot;id&quot;: 22,
-            &quot;name&quot;: &quot;ignacio.wisoky&quot;
-        },
-        {
-            &quot;id&quot;: 23,
-            &quot;name&quot;: &quot;bianca.yundt&quot;
-        }
-    ]
-}
-Request URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags/3
-Body:
-{
-    &quot;name&quot;: &quot;diedra.johnston&quot;
-}
-{
-    &quot;id&quot;: 3,
-    &quot;name&quot;: &quot;diedra.johnston&quot;
-}
 Request URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags
 Body:
 {
-    &quot;name&quot;: &quot;wilber.wisozk&quot;
+    &quot;name&quot;: &quot;jonah.mayert&quot;,
+    &quot;id&quot;: null
 }
 {
-    &quot;id&quot;: 27,
-    &quot;name&quot;: &quot;wilber.wisozk&quot;
+    &quot;id&quot;: 36,
+    &quot;name&quot;: &quot;jonah.mayert&quot;
 }
+Request URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags/36
+Body:			&lt;none&gt;
 </pre>
 </span>
 </div>
@@ -350,7 +265,7 @@ Body:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.2</a> at 25 июн. 2023 г., 01:03:15</p>
+<a href="http://www.gradle.org">Gradle 7.2</a> at 25 июн. 2023 г., 01:48:12</p>
 </div>
 </div>
 </body>

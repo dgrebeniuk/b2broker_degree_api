@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.TagTests" tests="5" skipped="0" failures="1" errors="0" timestamp="2023-06-24T22:03:12" hostname="MacBook-Air.local" time="2.161">
+<testsuite name="tests.TagTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-06-24T22:48:11" hostname="MacBook-Air.local" time="1.125">
   <properties/>
-  <testcase name="Delete a tag" classname="tests.TagTests" time="0.433">
-    <failure message="java.lang.AssertionError: 1 expectation failed.&#10;Expected status code &lt;204&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;204&gt; but was &lt;404&gt;.
+  <testcase name="Delete a tag" classname="tests.TagTests" time="1.125">
+    <failure message="java.lang.AssertionError: 1 expectation failed.&#10;Expected status code &lt;2040&gt; but was &lt;204&gt;.&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;2040&gt; but was &lt;204&gt;.
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -32,7 +32,7 @@ Expected status code &lt;204&gt; but was &lt;404&gt;.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at tests.TagTests.deleteTagById(TagTests.java:86)
+	at tests.TagTests.deleteTagById(TagTests.java:103)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -125,10 +125,6 @@ Expected status code &lt;204&gt; but was &lt;404&gt;.
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="Get tag by id" classname="tests.TagTests" time="0.625"/>
-  <testcase name="Get all tags" classname="tests.TagTests" time="0.345"/>
-  <testcase name="Update a tag" classname="tests.TagTests" time="0.337"/>
-  <testcase name="Create a new tag" classname="tests.TagTests" time="0.353"/>
   <system-out><![CDATA[Request URI:	https://stand-qa-05-api.b2broker.tech/api/v2/signin
 Body:
 {
@@ -138,89 +134,28 @@ Body:
 {
     "2faRequired": false,
     "accessToken": {
-        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODc2NDQxODcsIm5iZiI6MTY4NzY0NDE4NywiZXhwIjoxNjk3MjQ0MTg3LCJpc3MiOiJodHRwczovL3N0YW5kLXFhLTA1LWFwaS5iMmJyb2tlci50ZWNoIiwic3ViIjoiOCIsImlhdF9tdCI6IjE2ODc2NDQxODcuNzk5NyJ9.yXnDyD1pGeud8YgiVtTQwwUrZVzOWKXYCNF_8AZWVKbIi6tqFhmMbF0X-PlurAd2JsIxjfv473QJWyh9J5yvcPL7MBZCyEECo-VxPOOWK_rc2StVlmnI3NsMU_EhpHe1g_IrD54rl1zhElRCnJ6rIZ6iTHJY8261DaAUgWtuptObgOWw3azkShsoRqV1piURraejlV8BEgmbdmW0lOwkBbQTE_KL4YpSOgaYyafsC4PEjGIHfc0PAtLr_rNPLWSkrQajGTwIUKKXJ8NaqFnFj6EKWa9P_VS1MA20kUzcTjTz672IXZE8viVIPru6KjNZVHzd_rpjwczFQagvUb3ilw",
-        "createdAt": "2023-06-24T22:03:07+00:00",
-        "expiresAt": "2023-10-14T00:43:07+00:00"
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODc2NDY4ODUsIm5iZiI6MTY4NzY0Njg4NSwiZXhwIjoxNjk3MjQ2ODg1LCJpc3MiOiJodHRwczovL3N0YW5kLXFhLTA1LWFwaS5iMmJyb2tlci50ZWNoIiwic3ViIjoiOCIsImlhdF9tdCI6IjE2ODc2NDY4ODUuOTIwNiJ9.V5Jjw2KvFYOibfP3iV_W0if1z41qikKIcEHIw-RPdXumOQzxFovrUBmxFNg1trg3Be_utVCJ5wgxPE-8vnrSed-YJNqh9DyoRxBc7zfiPqRRdYVXEkKwwC5wfjWieaS1D-ovbRHN6wW0evrRDaYQr99PcvFpBk_x3Vw3nMBh4F4O_1G1OE1kf0R0T5NNons0qo0gInp8XpZMF1YBzqzftqhAEhHzT_B4YFVJXIUjUVT9qxw0icOPcmDgpRofhO9jXia2xWs_DiL5MEviNWNOKVMFFyKrvs_1AMXKXpJk9YBumm7af00k0HxO9b432Od53O_js-4NbPwa93G66j0CXw",
+        "createdAt": "2023-06-24T22:48:05+00:00",
+        "expiresAt": "2023-10-14T01:28:05+00:00"
     },
     "refreshToken": {
-        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODc2NDQxODcsIm5iZiI6MTY4NzY0NDE4NywiZXhwIjoxNjk3MjQ0MTg3LCJpc3MiOiJodHRwczovL3N0YW5kLXFhLTA1LWFwaS5iMmJyb2tlci50ZWNoIiwic3ViIjoiOCIsImlhdF9tdCI6IjE2ODc2NDQxODcuODA0NCJ9.Rlz3LB-xNUDYiJDBo6Pvaka2W6RsVVQ285oe9T5OKDTBTCjWHUQe7XnM3s9xn1W43bclkViEkI6VGnmB9q3NTlggNZCCD2iXt7PkkR9zx8hEwvdc1DvNP_lEMsrRU2S6V4hM3N_lJ_YFD2NogMDFxQhu708gbc_XdpNcpdrxc-6NoFkP7mMUfXM-CRyHp6LkwyFKfO6IUGi7t8_lccUzm7MsV4ax1xaBzYHT2EUx9PC88ISNTOePzaQwf2ByYkYhZMgZN3j4HC8_f52wTGqjfDhngr-0GBzaub3XI5m2xdgAOzRw0385LLEJ6o8S0KG_Xpor52MTmTQEKsI5hzr2tQ",
-        "createdAt": "2023-06-24T22:03:07+00:00",
-        "expiresAt": "2023-10-14T00:43:07+00:00"
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODc2NDY4ODUsIm5iZiI6MTY4NzY0Njg4NSwiZXhwIjoxNjk3MjQ2ODg1LCJpc3MiOiJodHRwczovL3N0YW5kLXFhLTA1LWFwaS5iMmJyb2tlci50ZWNoIiwic3ViIjoiOCIsImlhdF9tdCI6IjE2ODc2NDY4ODUuOTI0In0.ZAZE-WC9zXo2Ml8zlIIPfI_qNdE9OT2A4vZLe-mQf5k3-eYl50D6LH7yOqu3qyMNeki8IZovlKQWAHnU_s_5GwqOukzJFZd_17lOH_0YUat19wfhyO_cJqHA6FQ-44TPiFxthDpRoXBwWXGaN9exoFoHBnqrOJuifqZLZ6RWKuBdK78uO2g-khkDGZDgaiTf4vWiT1ll_YU5T7-HQa4wqpZ1f1QRWnXczrYZpiE4m3DdZTQ3t5ElPFymyNF3YzWcjyHKhSlqUofJEFoIvAZpi3C0pTVazIc7ap6qebi7MSn_WSSR9yddR2mZc0ehnm_oK545H-yG9e1pkHh5KKCDxg",
+        "createdAt": "2023-06-24T22:48:05+00:00",
+        "expiresAt": "2023-10-14T01:28:05+00:00"
     }
 }
-Request URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags/18
-Body:			<none>
-Request URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags/1
-Body:			<none>
-{
-    "id": 1,
-    "name": "tag"
-}
-Request URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags
-Body:			<none>
-{
-    "total": 13,
-    "data": [
-        {
-            "id": 1,
-            "name": "tag"
-        },
-        {
-            "id": 3,
-            "name": "honey.dietrich"
-        },
-        {
-            "id": 4,
-            "name": "my_tag"
-        },
-        {
-            "id": 6,
-            "name": "one"
-        },
-        {
-            "id": 16,
-            "name": "Customer Data Architect"
-        },
-        {
-            "id": 19,
-            "name": "cari.lynch"
-        },
-        {
-            "id": 20,
-            "name": "jeanna.ebert"
-        },
-        {
-            "id": 21,
-            "name": "kitty.doyle"
-        },
-        {
-            "id": 22,
-            "name": "ignacio.wisoky"
-        },
-        {
-            "id": 23,
-            "name": "bianca.yundt"
-        }
-    ]
-}
-Request URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags/3
-Body:
-{
-    "name": "diedra.johnston"
-}
-{
-    "id": 3,
-    "name": "diedra.johnston"
-}
 Request URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags
 Body:
 {
-    "name": "wilber.wisozk"
+    "name": "jonah.mayert",
+    "id": null
 }
 {
-    "id": 27,
-    "name": "wilber.wisozk"
+    "id": 36,
+    "name": "jonah.mayert"
 }
+Request URI:	https://stand-qa-05-api.b2broker.tech/api/v2/tags/36
+Body:			<none>
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

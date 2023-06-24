@@ -33,7 +33,7 @@ public class TagTests extends TestBase{
       TagBodyModel tagBody = new TagBodyModel();
       tagBody.setName(tagName);
 
-      given(tagRequestSpec)
+      TagBodyModel response = given(tagRequestSpec)
               .header("Authorization", "Bearer " + token)
               .body(tagBody)
               .when()
@@ -41,7 +41,8 @@ public class TagTests extends TestBase{
               .then()
                   .statusCode(201)
                   .spec(tagResponseSpec)
-                  .body("name", is(tagName));
+                  .body("name", is(tagName))
+                  .extract().as(TagBodyModel.class);
    }
 
 
@@ -78,12 +79,36 @@ public class TagTests extends TestBase{
    @DisplayName("Delete a tag")
    @Test
    void deleteTagById() {
+      TagBodyModel tagBody = new TagBodyModel();
+      tagBody.setName(tagName);
+
+      TagBodyModel response = given(tagRequestSpec)
+              .header("Authorization", "Bearer " + token)
+              .body(tagBody)
+              .when()
+              .post("/tags")
+              .then()
+              .statusCode(201)
+              .spec(tagResponseSpec)
+              .body("name", is(tagName))
+              .extract().as(TagBodyModel.class);
+
+      String newIdTag = response.getId();
+
       given(tagRequestSpec)
               .header("Authorization", "Bearer " + token)
               .when()
-              .delete("/tags/18")
+              .delete("/tags/" + newIdTag)
               .then()
               .statusCode(204)
+              .spec(tagResponseSpec);
+
+      given(tagRequestSpec)
+              .header("Authorization", "Bearer " + token)
+              .when()
+              .get("/tags/" + newIdTag)
+              .then()
+              .statusCode(404)
               .spec(tagResponseSpec);
    }
 }

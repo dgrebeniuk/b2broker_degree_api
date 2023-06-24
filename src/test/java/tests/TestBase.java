@@ -5,7 +5,6 @@ import models.LoginBodyModel;
 import models.TokenForAuth;
 import org.junit.jupiter.api.*;
 
-import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 import static specs.Specification.tagRequestSpec;

@@ -1,0 +1,58 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>POST: https://stand-qa-05-api.b2broker.tech/api/v2/tags</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "name": "marlyn.mcglynn",
+    "id": "547-91-1495"
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODc2NDU0NDcsIm5iZiI6MTY4NzY0NTQ0NywiZXhwIjoxNjk3MjQ1NDQ3LCJpc3MiOiJodHRwczovL3N0YW5kLXFhLTA1LWFwaS5iMmJyb2tlci50ZWNoIiwic3ViIjoiOCIsImlhdF9tdCI6IjE2ODc2NDU0NDcuOTI4OCJ9.OA5DUxoIlcfktouWEVixqwfBIrje2LiDfI0suffl_GLvh2E9mSwbXHq-WeWc3N3-iyN0ze9Ju9DMRLJNaXUC5Mq9_ryJ1YpnL92md_n-khmnDSh0lEGIyOSf443t6CIuvuE9-tCzf9Rvk8uSmtBez1syvBeRo4SZb2n9onPSdeeWChc5IV-tlGj1WjlfTYMUbrnwwUrGZtw3RHF_3Ww_QuoF9lHItQ8hgmuhjFweWJr9IIkHnqoIPVunaoLZl9LnpIBr-hSWQKhbXXNLaIphbVaJL4q4jhExqZ3zTeXIM7hIJJ6z_c5rO50K8f4agFaEifbSMuw2N-XCWFk9Ym964A</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X POST 'https://stand-qa-05-api.b2broker.tech/api/v2/tags' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODc2NDU0NDcsIm5iZiI6MTY4NzY0NTQ0NywiZXhwIjoxNjk3MjQ1NDQ3LCJpc3MiOiJodHRwczovL3N0YW5kLXFhLTA1LWFwaS5iMmJyb2tlci50ZWNoIiwic3ViIjoiOCIsImlhdF9tdCI6IjE2ODc2NDU0NDcuOTI4OCJ9.OA5DUxoIlcfktouWEVixqwfBIrje2LiDfI0suffl_GLvh2E9mSwbXHq-WeWc3N3-iyN0ze9Ju9DMRLJNaXUC5Mq9_ryJ1YpnL92md_n-khmnDSh0lEGIyOSf443t6CIuvuE9-tCzf9Rvk8uSmtBez1syvBeRo4SZb2n9onPSdeeWChc5IV-tlGj1WjlfTYMUbrnwwUrGZtw3RHF_3Ww_QuoF9lHItQ8hgmuhjFweWJr9IIkHnqoIPVunaoLZl9LnpIBr-hSWQKhbXXNLaIphbVaJL4q4jhExqZ3zTeXIM7hIJJ6z_c5rO50K8f4agFaEifbSMuw2N-XCWFk9Ym964A' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "name": "marlyn.mcglynn",
+    "id": "547-91-1495"
+}'</code></pre>
+    </div>
+</body>
+</html>

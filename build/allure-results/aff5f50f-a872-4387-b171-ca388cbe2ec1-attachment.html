@@ -1,0 +1,58 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>POST: https://stand-qa-05-api.b2broker.tech/api/v2/tags</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "name": "orval.goyette",
+    "id": null
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODc2NDY2NjIsIm5iZiI6MTY4NzY0NjY2MiwiZXhwIjoxNjk3MjQ2NjYyLCJpc3MiOiJodHRwczovL3N0YW5kLXFhLTA1LWFwaS5iMmJyb2tlci50ZWNoIiwic3ViIjoiOCIsImlhdF9tdCI6IjE2ODc2NDY2NjIuODI1NSJ9.QOyotVFRsEz9oC7um_QYZAE9mkNjgXPnNapM5-hMrer9y4n-7uO-wi7spztYMukLtqEGPDraotLbA3tPQmLOWziP_f1JHB4DqSinTymanNUqkwJ-rt0Ck_d4vlIGuhlFPGhmzJvp4FOG1a8JlcJ1iLXPQ_c-N0W0k3hHZyJnuaQJs91Ii4s_QbtyJhedTFiSsfAdd0molzpS0S1XW8cNkENaFgp-_V3CBhA_RuhGEGx24Typ155AMKqU_hGfq6pii11XHXNlflCHQWfZuaf__Q0NW5PPqJP7Ntz36ET1ISxP4svkC7mZSOXRvtfbSL93JbpVUa35O4m47xpa0xg87g</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X POST 'https://stand-qa-05-api.b2broker.tech/api/v2/tags' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODc2NDY2NjIsIm5iZiI6MTY4NzY0NjY2MiwiZXhwIjoxNjk3MjQ2NjYyLCJpc3MiOiJodHRwczovL3N0YW5kLXFhLTA1LWFwaS5iMmJyb2tlci50ZWNoIiwic3ViIjoiOCIsImlhdF9tdCI6IjE2ODc2NDY2NjIuODI1NSJ9.QOyotVFRsEz9oC7um_QYZAE9mkNjgXPnNapM5-hMrer9y4n-7uO-wi7spztYMukLtqEGPDraotLbA3tPQmLOWziP_f1JHB4DqSinTymanNUqkwJ-rt0Ck_d4vlIGuhlFPGhmzJvp4FOG1a8JlcJ1iLXPQ_c-N0W0k3hHZyJnuaQJs91Ii4s_QbtyJhedTFiSsfAdd0molzpS0S1XW8cNkENaFgp-_V3CBhA_RuhGEGx24Typ155AMKqU_hGfq6pii11XHXNlflCHQWfZuaf__Q0NW5PPqJP7Ntz36ET1ISxP4svkC7mZSOXRvtfbSL93JbpVUa35O4m47xpa0xg87g' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "name": "orval.goyette",
+    "id": null
+}'</code></pre>
+    </div>
+</body>
+</html>

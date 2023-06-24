@@ -1,0 +1,95 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div><h4>Status code</h4> 
+        <pre><code><b>200</b></code></pre>
+    </div>
+
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Transfer-Encoding</b>: chunked</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Server</b>: openresty</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Server-Timing</b>: app; dur=135.93602180481; desc="Application", db; dur=10.64; desc="Database", timeline-event-0; dur=106.01997375488; desc="Controller"</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Connection</b>: keep-alive</code></pre>
+            </div>
+            <div>
+                <pre><code><b>X-Clockwork-Id</b>: 1687645198-1534-1134245564</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Date</b>: Sat, 24 Jun 2023 22:19:58 GMT</code></pre>
+            </div>
+            <div>
+                <pre><code><b>X-RateLimit-Remaining</b>: 598</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Cache-Control</b>: no-cache, private</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Access-Control-Allow-Credentials</b>: true</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Encoding</b>: gzip</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Vary</b>: Accept-Encoding</code></pre>
+            </div>
+            <div>
+                <pre><code><b>X-Clockwork-Version</b>: 5.1.12</code></pre>
+            </div>
+            <div>
+                <pre><code><b>X-RateLimit-Limit</b>: 600</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+            <div>
+                <pre><code><b>X-API-Version</b>: 2.1.0</code></pre>
+            </div>
+    </div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "2faRequired": false,
+    "accessToken": {
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODc2NDUxOTgsIm5iZiI6MTY4NzY0NTE5OCwiZXhwIjoxNjk3MjQ1MTk4LCJpc3MiOiJodHRwczovL3N0YW5kLXFhLTA1LWFwaS5iMmJyb2tlci50ZWNoIiwic3ViIjoiOCIsImlhdF9tdCI6IjE2ODc2NDUxOTguMjcxNSJ9.CES5Ifi6SzGlUGieZ2EWyztAJ_eGVl2gIkSp9WfaLwhVLMkib7PCw0xTd1PfSq50C1ci8AZ4GqpIEDbGu3M4QpozoPDPbaVW8VPVcVBe26M5sX7X0iWTeLrvluW6Po_mHG4An9rJ0e08T5QtcyIr8BpwAmxt5s9HP8g7EfMTFtLjGbj_3aVjqxSjzWctQL89jqx95CSz7-ZFLfOEU1YYkDbSB-BRIersK9V0lPun_NIT44wHIlsQJdyCMne3It2rSNTVA_hssBSv4XSDOgjWhchGWhxKqcwUVsUKpOn-q7yXrkRM7aPgkiRMth0RS3g-E8jmmNj0NvFnbJRHEMjwRA",
+        "createdAt": "2023-06-24T22:19:58+00:00",
+        "expiresAt": "2023-10-14T00:59:58+00:00"
+    },
+    "refreshToken": {
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODc2NDUxOTgsIm5iZiI6MTY4NzY0NTE5OCwiZXhwIjoxNjk3MjQ1MTk4LCJpc3MiOiJodHRwczovL3N0YW5kLXFhLTA1LWFwaS5iMmJyb2tlci50ZWNoIiwic3ViIjoiOCIsImlhdF9tdCI6IjE2ODc2NDUxOTguMjc2In0.u1dZtk2X-cDEQV1u2wkhPml5MOh_DDtYslshrW2XfE4_XmSbfW2ldQceEvXuG-O-mu1XCrADoCKj7bJBheRsWFxv_G3VVDooU28LYb-LdPRb9C08pd0Xq1q-j1vhHAKjZX3gIBZZIn3dDzFXBcbsWX3VxrYAGBcBxc0NO6Jak4yLwEvAjoubeO3oYrp9NfUt3VsYXxsZvXb6MRtfWEiKbgQDC3qdqE2lsnLUzqAkClWw9JGhKgSZt1aYUXKi_KKY24bmFT9BwfuUAep7N_R00ADl0SqlJmzHvWoyBTvxL54wq0on-bCs2J9vU3nWFqwNiVVBT_dFyJRCAKc-G3IYPA",
+        "createdAt": "2023-06-24T22:19:58+00:00",
+        "expiresAt": "2023-10-14T00:59:58+00:00"
+    }
+}</code></pre>
+    </div>
+
+</body>
+</html>
